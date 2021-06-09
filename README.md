@@ -1,3 +1,5 @@
+[![CI](https://github.com/freuds/molecule-ansible-testing/workflows/CI/badge.svg?event=push)](https://github.com/freuds/molecule-ansible-testing/actions?query=workflow%3ACI)
+
 # Molecule testing
 
 
