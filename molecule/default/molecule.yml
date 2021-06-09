@@ -2,16 +2,12 @@
 dependency:
   name: galaxy
 driver:
-  name: delegated
-  # name: docker
+  name: docker
 lint: |
   set -e
   yamllint .
   ansible-lint
 platforms:
-  # - name: ubuntu
-  #   image: docker.io/pycontribs/ubuntu
-  #   pre_build_image: true
   - name: instance
     image: geerlingguy/docker-${MOLECULE_DISTRO:-centos8}-ansible:latest
     command: ""
